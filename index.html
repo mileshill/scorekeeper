@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Input Button/ Main -->
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <title>Score Keeper</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="jumbotron">
+                <h1>Simple Score Keeper</h1>
+            </div>
+            <hr>
+            <h2>About</h2>
+            <p>
+            <emph>Simple Score Keeper</emph> is a state based score tracker. Only two states are tracked; <code>gameOver= true || false</code>. Scores are maintained in the global namespace. All logic utilizes vanilla javascript.
+            </p>
+            <h3>Technology</h3>
+            <ul>
+            	<li>HTML / CSS / Javascript</li>
+            	<li>Bootstrap</li>
+            	<li>Font Awesome</li>
+            </ul>
+            <hr>
+            <h2><span class="player1">0</span> to <span class="player2">0</span></h2>
+            <h3>Playing to: <span id="limit"></span></h3>
+            <!-- INPUT -->
+            <div class="container">
+                <div class="row">
+                    <!-- Score Limit Button -->
+                    <div class="col-sm-3">
+                        <div class="input-group spinner">
+                            <input type="text" class="form-control" value="7">
+                            <div class="input-group-btn-vertical">
+                                <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                                <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-primary btn-large player1">Player 1</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-primary player2">Player 2</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-primary reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <!-- Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Scorekeeper -->
+        <script src="static/js/spinner.js"></script>
+        <script src="static/js/scorekeeper.js"></script>
+</body>
+
+</html>
